@@ -1,0 +1,352 @@
+/** @format */
+
+/* CSS for Large Screens (>1024) */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav.mainNavbar {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  padding: 13px;
+  background-color: #cc0033;
+  text-align: center;
+}
+
+.mainNavbar .brandName {
+  height: 50px;
+  width: 180px;
+  background-color: #303030;
+  position: absolute;
+  top: 13px;
+  left: 13px;
+}
+
+.mainNavbar .searchContainer {
+  display: inline-block;
+  height: 50px;
+  width: 540px;
+  background-color: #a00028;
+  position: relative;
+}
+
+.searchContainer .searchIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.navbarShadow {
+  height: 45px;
+  width: 100%;
+  position: fixed;
+  top: 76px;
+  background-color: #a00028;
+}
+
+.heroArea {
+  box-sizing: border-box;
+  margin-top: 120px;
+  width: 100%;
+  height: 394px;
+  padding: 15px 42px;
+  background-image: url('./images/B&W_bg.jpg');
+  background-position: 50% 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heroArea .heroItems {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.heroItems .heroText {
+  color: #fff;
+  text-align: left;
+  max-width: 50%;
+}
+
+.heroText .heroTitle {
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 70px;
+}
+
+.heroText .heroSubtitle {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.heroText .heroContent {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.boxArea {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: -55px;
+}
+
+.boxArea .eachBox {
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 42px;
+  border: 14px solid #fff;
+  padding: 80px 130px;
+  box-shadow: 0px 0px 20px 1px #b7b7b780;
+  margin: 0px 15px 0px 15px;
+  margin-bottom: 35px;
+}
+
+.eachBox:nth-child(1) {
+  background-color: #35d3b4;
+}
+
+.eachBox:nth-child(2) {
+  background-color: #1b2191;
+}
+
+.eachBox:nth-child(3) {
+  background-color: #d822ee;
+}
+
+footer {
+  width: 100%;
+  height: 30vh;
+  background-color: #272727;
+}
+
+footer .footerLinkContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerLinkContainer .leftLinkContainer,
+.footerLinkContainer .rightLinkContainer {
+  text-align: left;
+  color: #fff;
+}
+
+.footerLinkContainer .rightLinkContainer {
+  margin-left: 165px;
+}
+
+.leftFooterTitle {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 900;
+}
+
+.footerLinkContainer .leftLinks {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+/* Media Query for Tablets (<1024px) */
+@media screen and (max-width: 1024px) {
+  nav.mainNavbar {
+    text-align: left;
+  }
+
+  .mainNavbar .searchContainer {
+    margin-left: 206px;
+  }
+
+  .heroArea {
+    padding-top: 50px;
+    padding-right: 5px;
+  }
+
+  .heroArea .heroItems {
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .heroItems .heroText {
+    max-width: 45%;
+  }
+
+  .heroText .heroContentMobile {
+    display: none;
+  }
+
+  .heroImgContainer {
+    margin-top: 100px;
+  }
+
+  .boxArea {
+    display: flex;
+    margin-top: 75px;
+  }
+
+  .boxAreaMobile {
+    display: none;
+  }
+
+  .boxArea .eachBox {
+    margin-bottom: 70px;
+  }
+
+  footer {
+    height: 200px;
+  }
+
+  footer .footerLinkContainer {
+    flex-direction: row;
+  }
+}
+
+/* CSS Specific for iPad (<768px) */
+@media screen and (max-width: 768px) {
+  .heroImgContainer {
+    margin-top: 175px;
+  }
+
+  .heroImgContainer .heroImg {
+    width: 370px;
+    height: auto;
+  }
+
+  .heroText .heroTitle {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 5px;
+  }
+
+  .heroText .heroSubtitle {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 8px;
+  }
+
+  .heroText .heroContent {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+  }
+}
+
+/* CSS Specific for Mobile Devices (<425px) */
+/* Max width of Mobile devices taken to be 425px to accomodate latest phones i.e. iPhone etc. */
+@media screen and (max-width: 425px) {
+  nav.mainNavbar {
+    box-sizing: border-box;
+  }
+
+  .mainNavbar .brandName {
+    width: 54px;
+  }
+
+  .mainNavbar .searchContainer {
+    width: 270px;
+    margin-left: 67px;
+  }
+
+  .heroArea {
+    padding: 0px;
+  }
+
+  .heroArea .heroItems {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heroItems .heroText {
+    max-width: 100%;
+    padding: 32px 30px 0px 30px;
+  }
+
+  .heroText .heroContent {
+    display: none;
+  }
+
+  .heroText .heroContentMobile {
+    display: block;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+  }
+
+  .heroImgContainer {
+    margin-top: 45px;
+  }
+
+  .heroImgContainer .heroImg {
+    width: 331px;
+    height: auto;
+  }
+
+  .boxArea {
+    display: none;
+  }
+
+  .boxAreaMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 34px;
+  }
+
+  .eachBoxMobile {
+    width: 330px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 5px 0px;
+  }
+
+  .eachBoxMobile:nth-child(1) {
+    background-color: #35d3b4;
+  }
+
+  .eachBoxMobile:nth-child(2) {
+    background-color: #1b2191;
+  }
+
+  .eachBoxMobile:nth-child(3) {
+    background-color: #d822ee;
+  }
+
+  .eachBoxMobile:nth-child(4) {
+    background-color: #057bad;
+  }
+
+  footer {
+    height: 275px;
+  }
+
+  footer .footerLinkContainer {
+    flex-direction: column;
+  }
+
+  .footerLinkContainer .rightLinkContainer {
+    margin-left: 0px;
+    margin-top: 26px;
+  }
+}
