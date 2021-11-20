@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
+    <!-- ----------Loader---------- -->
+    <div id="preloader">
+      <div class="spinner"></div>
+    </div>
+
+    <!-- ----------NAVBAR---------- -->
     <nav class="mainNavbar">
       <a class="navbar-brand brandName" href="#"></a>
       <div class="searchContainer">
@@ -21,6 +27,8 @@
       </div>
     </nav>
     <div class="navbarShadow"></div>
+
+    <!-- ----------Hero Section---------- -->
     <div class="heroArea">
       <div class="heroItems">
         <div class="heroText">
@@ -44,6 +52,8 @@
         </div>
       </div>
     </div>
+
+    <!-- ----------Box Section---------- -->
     <div class="boxArea">
       <div class="eachBox">#35D3B4</div>
       <div class="eachBox">#1B2191</div>
@@ -55,6 +65,8 @@
       <div class="eachBoxMobile"></div>
       <div class="eachBoxMobile"></div>
     </div>
+
+    <!-- ----------Footer---------- -->
     <footer>
       <div class="footerLinkContainer">
         <div class="leftLinkContainer">
@@ -69,5 +81,14 @@
         </div>
       </div>
     </footer>
+
+    <!-- ----------------------------Script for Loader---------------------------- -->
+    <script>
+      var overlay = document.getElementById('preloader');
+
+      window.addEventListener('load', function () {
+        overlay.style.display = 'none';
+      });
+    </script>
   </body>
 </html>

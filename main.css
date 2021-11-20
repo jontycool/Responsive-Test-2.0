@@ -1,5 +1,43 @@
 /** @format */
 
+/* CSS for Loader */
+#preloader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(51, 51, 51, 1);
+  z-index: 999;
+}
+
+.spinner {
+  width: 80px;
+  height: 80px;
+
+  border: 2px solid #f4f4f4;
+  border-top: 3px solid #e60000;
+  border-radius: 100%;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* CSS for Large Screens (>1024) */
 body {
   font-family: 'Roboto', sans-serif;
